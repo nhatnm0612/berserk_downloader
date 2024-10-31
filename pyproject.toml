@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "berserk-downloader"
+version = "0.1.0"
+description = "Download Berserk manga from Kentaro Miura"
+authors = ["nhatnm0612 <nhatnguyenminh061289@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+pydantic = "^2.9.2"
+
+[tool.poetry.scripts]
+berserk-downloader = "berserk_downloader.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

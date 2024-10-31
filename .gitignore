@@ -1,0 +1,13 @@
+__pycache__/
+
+Berserk/
+
+.venv/
+
+.vscode/
+
+poetry.lock
+
+.mypy_cache/
+
+.ruff_cache/
