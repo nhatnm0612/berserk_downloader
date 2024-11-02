@@ -1,5 +1,13 @@
 # BERSERK DOWNLOADER
 
+
+[![Quality Check](https://github.com/nhatnm0612/berserk_downloader/actions/workflows/qa.yaml/badge.svg?branch=main)](https://github.com/nhatnm0612/berserk_downloader/actions/workflows/qa.yaml?query=branch%3Amain)
+
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![pre-commit enabled](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=yellow.svg)](https://pre-commit.com/)
+[![Poetry project](https://img.shields.io/badge/poetry-enabled-brightgreen?logo=poetry&logoColor=blue.svg)](https://python-poetry.org/)
+
 - [Description](#description)
 - [How to install?](#how-to-install)
 - [How to run?](#how-to-run)
