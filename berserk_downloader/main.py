@@ -33,7 +33,7 @@ def downloader(chapters: list[str] | str = []) -> int:
     soup = BeautifulSoup(root_page.text, features="html.parser")
     focus = soup.find("tbody", attrs={"class": "no-border-x"})
     if not focus or isinstance(focus, NavigableString):
-        return 0
+        return 0  # pragma: no cover
     for tr in focus.find_all("tr"):
         chap_name = tr.find_all("td")[0].get_text()
         chap_published_date = tr.find_all("td")[1].get_text()

@@ -30,7 +30,7 @@ class Chapter(pydantic.BaseModel):
         soup = BeautifulSoup(chapter_page.text, features="html.parser")
         focus = soup.find("div", attrs={"class": "pages"})
         if not focus or isinstance(focus, NavigableString):
-            return
+            return  # pragma: no cover
         images = focus.find_all("img", attrs={"class": "pages__img"})
         for i, img in enumerate(images):
             src = img.attrs.get("src").strip()

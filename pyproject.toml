@@ -13,12 +13,18 @@ pydantic = "^2.9.2"
 
 [tool.poetry.scripts]
 berserk-downloader = "berserk_downloader.main:main"
+berserk-downloader-test = "pytest:main"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.0.1"
+pytest-cov = "^6.0.0"
 
 [tool.mypy]
 ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=berserk_downloader --cov-report=term-missing --cov-report=html"
 
 [build-system]
 requires = ["poetry-core"]

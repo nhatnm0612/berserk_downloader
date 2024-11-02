@@ -11,3 +11,5 @@ poetry.lock
 .mypy_cache/
 
 .ruff_cache/
+
+.coverage
