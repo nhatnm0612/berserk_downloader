@@ -29,14 +29,16 @@ This project is to download Berserk from website https://readberserk.com/
 
 ## How to install?
 
-Required python 3.x, and poetry installed
+Required python 3.x
 
 ```bash
-poetry install
+$ cd /path/to/clone/path
+
+$ pip install .
 ```
 
 ## How to run?
 
 ```bash
-poetry run berserk-downloader
+$ python -m berserk_downloader
 ```
