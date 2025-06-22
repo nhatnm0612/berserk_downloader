@@ -50,10 +50,9 @@ class Chapter(pydantic.BaseModel):
     @staticmethod
     def create_root_dir() -> str:
         """Create root folder for downloading"""
-        this_file = os.path.abspath(__file__)
-        module_root = os.path.dirname(os.path.dirname(this_file))
-        os.makedirs(os.path.join(module_root, "Berserk"), exist_ok=True)
-        return os.path.join(module_root, "Berserk")
+        running_dir = os.getcwd()
+        os.makedirs(os.path.join(running_dir, "Berserk"), exist_ok=True)
+        return os.path.join(running_dir, "Berserk")
 
     def download(self):
         """Download chapter"""
